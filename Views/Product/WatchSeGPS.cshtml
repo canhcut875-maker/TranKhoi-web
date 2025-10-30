@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "WatchSeGPS";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link href="~/Content/style_K/Style_TrangCuThe.css" rel="stylesheet" />
+<section class="container">
+    @*Hình ảnh sản phẩm*@
+    <div class="product-image">
+        <img src="~/Content/img/0032869_apple-watch-se-gps-cellular-2024-sport-band-size-sm_240.jpeg">
+    </div>
+
+    @*Thông tin sản phẩm*@
+    <div class="product-info" data-id="Watch-Se-GPS" data-price="17490000">
+        <h1 class="name">Watch Se GPS</h1>
+        <p class="price">17.490.000₫ <span class="old-price">27.990.000₫</span></p>
+        <p class="vat">(Đã bao gồm VAT)</p>
+
+        <div class="section">
+            <h3>Dung lượng</h3>
+            <div class="options">
+                <button class="option active">128GB</button>
+                <button class="option">256GB</button>
+                <button class="option">512GB</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Màu sắc</h3>
+            <div class="colors">
+
+                <span class="color black"></span>
+                <span class="color red active"></span>
+                <span class="color blue"></span>
+                <span class="color yellow"></span>
+            </div>
+        </div>
+       
+        <button class="buy-btn add-to-cart">THÊM VÀO GIỎ HÀNG<i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+</section>
+<script src="~/Content/js/Js_Product.js"></script>

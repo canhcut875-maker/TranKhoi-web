@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "OrderHistory";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+<link href="~/Content/style_K/Style_OrderHistory.css" rel="stylesheet" />
+<div class="container-order">
+    <h2>Lịch sử mua hàng</h2>
+
+    <table class="order-table">
+        <thead>
+            <tr>
+                <th>Mã đơn</th>
+                <th>Ngày mua</th>
+                <th>Sản phẩm</th>
+                <th>Tổng tiền</th>
+                <th>Trạng thái</th>
+            </tr>
+        </thead>
+        <tbody id="orderBody"></tbody>
+    </table>
+
+    <div id="noOrder" class="hidden">Bạn chưa mua sản phẩm nào.</div>
+</div>
+<script src="~/Content/js/Js_OrderHistory.js"></script>
+

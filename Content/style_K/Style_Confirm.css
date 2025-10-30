@@ -1,0 +1,150 @@
+﻿body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+}
+
+.warning {
+    background-color: #fff5f5;
+    color: #e53e3e;
+    border: 1px solid #e53e3e;
+    padding: 12px 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+}
+
+.bank-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+    .bank-info p:first-child {
+        margin-top: 0;
+    }
+
+.qr-section {
+    margin: 20px 0;
+}
+
+.qr-code {
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.qr-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #4a5568;
+    font-weight: 500;
+}
+
+.qr-instruction {
+    color: #718096;
+    margin-top: 15px;
+}
+
+.divider {
+    border-top: 1px solid #e2e8f0;
+    margin: 25px 0;
+}
+
+.payment-info {
+    text-align: left;
+}
+
+    .payment-info h2 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+.option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+    .option input {
+        margin-right: 12px;
+    }
+
+    .option label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .option img {
+        height: 24px;
+        margin-right: 8px;
+    }
+
+.other-methods {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.footer {
+    margin-top: 25px;
+    text-align: center;
+}
+
+    .footer p, .footer a {
+        font-size: 15px;
+        margin: 12px 0;
+    }
+
+    .footer a {
+        color: #2563eb;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+.home-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #2563eb;
+    color: #2563eb;
+    background-color: #fff;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+    .home-btn:hover {
+        background-color: #eff6ff;
+    }

@@ -1,0 +1,92 @@
+﻿
+@{
+    ViewBag.Title = "Address";
+    Layout = null;
+}
+<link href="~/Content/style_K/Style_Address.css" rel="stylesheet" />
+<div class="cart_container">
+    <h3>Thông tin khách hàng</h3>
+    <div class="gender">
+        <label><input type="radio" name="gender"> Anh</label>
+        <label><input type="radio" name="gender"> Chị</label>
+    </div>
+    <input type="text" placeholder="Họ và Tên" id="fullname">
+    <input type="tel" placeholder="Số điện thoại" id="phone">
+
+    <h3>Hình thức nhận hàng</h3>
+    <div class="shipping-method">
+        <label><input type="radio" name="delivery" checked> Giao tận nơi</label>
+        <label><input type="radio" name="delivery"> Nhận tại cửa hàng</label>
+    </div>
+
+    <select id="city">
+        <option value="">--Chọn tỉnh / Thành phố--</option>
+        <option value="An Giang">An Giang</option>
+        <option value="Bắc Ninh">Bắc Ninh</option>
+        <option value="Cà Mau">Cà Mau</option>
+        <option value="Cao Bằng">Cao Bằng</option>
+        <option value="TP Cần Thơ">TP Cần Thơ</option>
+        <option value="TP Đà Nẵng">TP Đà Nẵng</option>
+        <option value="Đắk Lắk">Đắk Lắk</option>
+        <option value="Điện Biên">Điện Biên</option>
+        <option value="Đồng Nai">Đồng Nai</option>
+        <option value="Đồng Tháp">Đồng Tháp</option>
+        <option value="Gia Lai">Gia Lai</option>
+        <option value="TP Hà Nội">TP Hà Nội</option>
+        <option value="Hà Tĩnh">Hà Tĩnh</option>
+        <option value="TP Hải Phòng">TP Hải Phòng</option>
+        <option value="TP Hồ Chí Minh">TP Hồ Chí Minh</option>
+        <option value="TP Huế">TP Huế</option>
+        <option value="Hưng Yên">Hưng Yên</option>
+        <option value="Khánh Hòa">Khánh Hòa</option>
+        <option value="Lai Châu">Lai Châu</option>
+        <option value="Lạng Sơn">Lạng Sơn</option>
+        <option value="Lào Cai">Lào Cai</option>
+        <option value="Lâm Đồng">Lâm Đồng</option>
+        <option value="Nghệ An">Nghệ An</option>
+        <option value="Ninh Bình">Ninh Bình</option>
+        <option value="Phú Thọ">Phú Thọ</option>
+        <option value="Quảng Ngãi">Quảng Ngãi</option>
+        <option value="Quảng Ninh">Quảng Ninh</option>
+        <option value="Quảng Trị">Quảng Trị</option>
+        <option value="Sơn La">Sơn La</option>
+        <option value="Tây Ninh">Tây Ninh</option>
+        <option value="Thái Nguyên">Thái Nguyên</option>
+        <option value="Thanh Hóa">Thanh Hóa</option>
+        <option value="Tuyên Quang">Tuyên Quang</option>
+        <option value="Vĩnh Long">Vĩnh Long</option>
+    </select>
+    <select id="district">
+        <option value="">--Chọn Quận / Huyện--</option>
+    </select>
+    <select id="ward">
+        <option value="">--Chọn Phường / Xã--</option>
+    </select>
+
+    <input type="text" placeholder="Địa chỉ cụ thể" id="specific-address">
+    <textarea rows="2" placeholder="Nhập ghi chú (nếu có)"></textarea>
+
+    <div class="checkbox">
+        <input type="checkbox"> <label>Xuất hoá đơn công ty</label>
+    </div>
+
+
+    <div class=""></div>
+
+    <div class="total">
+        <div>Tổng tiền:</div>
+        <span>37.999.000₫</span> @* Note: Có thể thay đổi giá tuỳ theo sản phẩm*@
+    </div>
+
+    <div class="checkbox">
+        <input type="checkbox" checked>
+        <label>Tôi đã đọc và đồng ý với điều khoản & điều kiện của website</label>
+    </div>
+
+    <a href="/Default/Confirm" id="link_btn">
+        <button>Tiến hành đặt hàng</button>
+    </a>
+
+    <p class="note">Bạn có thể lựa chọn các hình thức thanh toán ở bước sau</p>
+</div>
+<script src="~/Content/js/js_Address.js"></script>

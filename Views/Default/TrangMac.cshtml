@@ -1,0 +1,157 @@
+﻿
+@{
+    ViewBag.Title = "TrangMac";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+<link href="~/Content/style_K/Style_TrangCon.css" rel="stylesheet" />
+@*   breadcrumb     *@
+<nav class="breadcrumb">
+    <a href="/Default/Index">Trang chủ </a>> <span>Mac</span>
+</nav>
+@*banner*@
+<link href="~/Content/style_K/Style_silder.css" rel="stylesheet" />
+<section class="banner-section">
+    <div class="slider">
+        <div class="slides">
+            <div class="slide" onclick="window.location.href=''">
+                <img src="~/Content/img/Mac1.png" />
+            </div>
+            <div class="slide" onclick="window.location.href=''">
+                <img src="~/Content/img/Mac2.png" />
+            </div>
+            <div class="slide" onclick="window.location.href=''">
+                <img src="~/Content/img/Mac3.png" />
+            </div>
+            
+        </div>
+
+        @*Nút điều hướng*@
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+
+        @*dau cham*@
+        <div class="dots"></div>
+    </div>
+</section>
+<script src="~/Content/js/js_banner.js"></script>
+
+@* Best seller*@
+<div class="iphone-series">
+    <a href="/Product/MacbookAirM3" class="series-btn">Macbook Air M3</a>
+    <a href="/Product/MacbookAirM4" class="series-btn">Macbook Air M4</a>
+
+</div>
+@*product dung grid de chia ra tung 1fr hinh tuy thuoc vao ddo co dang cua mang hinh*@
+<section class="product-grid">
+    <a href="/Product/MacbookAirM3" class="product-card">
+        @*<div class="Tag New">Mới</div>*@
+
+        <img src="~/Content/img/0034122_macbook-air-m3-13-inch-8gb-ram-256gb-ssd_240.jpeg" alt="Alternate Text" />
+
+        <h3>Macbook Air M3</h3>
+        <p class="price">37.999.000đ</p>
+    </a>
+
+    <a href="/Product/MacbookAirM4" class="product-card">
+        @*<div class="Tag Sale">Giảm 0%</div>
+            <div class="Tag New">Mới</div>*@
+
+        <img src="~/Content/img/0036014_macbook-air-m4-13-inch-8-core-gpu-16gb-ram-256gb-ssd_240.jpeg" alt="Alternate Text" />
+
+        <h3>Macbook Air M4</h3>
+        <p class="price">37.999.000đ <span class="old-price">34.999.000đ</span></p>
+    </a>
+    <a href="/Product/MacbookAirM3" class="product-card">
+        @*<div class="Tag New">Mới</div>*@
+
+        <img src="~/Content/img/0034122_macbook-air-m3-13-inch-8gb-ram-256gb-ssd_240.jpeg" alt="Alternate Text" />
+
+        <h3>Macbook Air M3</h3>
+        <p class="price">37.999.000đ</p>
+    </a>
+
+    <a href="/Product/MacbookAirM4" class="product-card">
+        @*<div class="Tag Sale">Giảm 0%</div>
+            <div class="Tag New">Mới</div>*@
+
+        <img src="~/Content/img/0036014_macbook-air-m4-13-inch-8-core-gpu-16gb-ram-256gb-ssd_240.jpeg" alt="Alternate Text" />
+
+        <h3>Macbook Air M4</h3>
+        <p class="price">37.999.000đ <span class="old-price">34.999.000đ</span></p>
+    </a>
+    <a href="/Product/MacbookAirM3" class="product-card">
+        @*<div class="Tag New">Mới</div>*@
+
+        <img src="~/Content/img/0034122_macbook-air-m3-13-inch-8gb-ram-256gb-ssd_240.jpeg" alt="Alternate Text" />
+
+        <h3>Macbook Air M3</h3>
+        <p class="price">37.999.000đ</p>
+    </a>
+
+    <a href="/Product/MacbookAirM4" class="product-card">
+        @*<div class="Tag Sale">Giảm 0%</div>
+            <div class="Tag New">Mới</div>*@
+
+        <img src="~/Content/img/0036014_macbook-air-m4-13-inch-8-core-gpu-16gb-ram-256gb-ssd_240.jpeg" alt="Alternate Text" />
+
+        <h3>Macbook Air M4</h3>
+        <p class="price">37.999.000đ <span class="old-price">34.999.000đ</span></p>
+    </a>
+    <a href="/Product/MacbookAirM3" class="product-card">
+        @*<div class="Tag New">Mới</div>*@
+
+        <img src="~/Content/img/0034122_macbook-air-m3-13-inch-8gb-ram-256gb-ssd_240.jpeg" alt="Alternate Text" />
+
+        <h3>Macbook Air M3</h3>
+        <p class="price">37.999.000đ</p>
+    </a>
+
+    <a href="/Product/MacbookAirM4" class="product-card">
+        @*<div class="Tag Sale">Giảm 0%</div>
+            <div class="Tag New">Mới</div>*@
+
+        <img src="~/Content/img/0036014_macbook-air-m4-13-inch-8-core-gpu-16gb-ram-256gb-ssd_240.jpeg" alt="Alternate Text" />
+
+        <h3>Macbook Air M4</h3>
+        <p class="price">37.999.000đ <span class="old-price">34.999.000đ</span></p>
+    </a>
+    <a href="/Product/MacbookAirM3" class="product-card">
+        @*<div class="Tag New">Mới</div>*@
+
+        <img src="~/Content/img/0034122_macbook-air-m3-13-inch-8gb-ram-256gb-ssd_240.jpeg" alt="Alternate Text" />
+
+        <h3>Macbook Air M3</h3>
+        <p class="price">37.999.000đ</p>
+    </a>
+
+    <a href="/Product/MacbookAirM4" class="product-card">
+        @*<div class="Tag Sale">Giảm 0%</div>
+            <div class="Tag New">Mới</div>*@
+
+        <img src="~/Content/img/0036014_macbook-air-m4-13-inch-8-core-gpu-16gb-ram-256gb-ssd_240.jpeg" alt="Alternate Text" />
+
+        <h3>Macbook Air M4</h3>
+        <p class="price">37.999.000đ <span class="old-price">34.999.000đ</span></p>
+
+    </a>
+    <a href="/Product/MacbookAirM3" class="product-card">
+        @*<div class="Tag New">Mới</div>*@
+
+        <img src="~/Content/img/0034122_macbook-air-m3-13-inch-8gb-ram-256gb-ssd_240.jpeg" alt="Alternate Text" />
+
+        <h3>Macbook Air M3</h3>
+        <p class="price">37.999.000đ</p>
+    </a>
+
+    <a href="/Product/MacbookAirM4" class="product-card">
+        @*<div class="Tag Sale">Giảm 0%</div>
+            <div class="Tag New">Mới</div>*@
+
+        <img src="~/Content/img/0036014_macbook-air-m4-13-inch-8-core-gpu-16gb-ram-256gb-ssd_240.jpeg" alt="Alternate Text" />
+
+        <h3>Macbook Air M4</h3>
+        <p class="price">37.999.000đ <span class="old-price">34.999.000đ</span></p>
+    </a>
+
+</section>

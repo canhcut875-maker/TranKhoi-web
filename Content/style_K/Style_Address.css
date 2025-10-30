@@ -1,0 +1,231 @@
+﻿* {
+    box-sizing: border-box;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* ========== FORM / CART PAGE ========== */
+.cart_container {
+    background: white;
+    width: 400px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.gender {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.shipping-method {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+    .total span {
+        color: red;
+    }
+
+/* ========== CONFIRM PAGE ========== */
+.container {
+    width: 100%;
+    max-width: 480px;
+}
+
+.warning {
+    background-color: #fff5f5;
+    color: #e53e3e;
+    border: 1px solid #e53e3e;
+    padding: 12px 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+}
+
+.bank-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+.qr-section {
+    margin: 20px 0;
+}
+
+.qr-code {
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.qr-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #4a5568;
+    font-weight: 500;
+}
+
+.qr-instruction {
+    color: #718096;
+    margin-top: 15px;
+}
+
+.divider {
+    border-top: 1px solid #e2e8f0;
+    margin: 25px 0;
+}
+
+.payment-info {
+    text-align: left;
+}
+
+    .payment-info h2 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+.option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+    .option input {
+        margin-right: 12px;
+    }
+
+    .option img {
+        height: 24px;
+        margin-right: 8px;
+    }
+
+.other-methods {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.footer {
+    margin-top: 25px;
+    text-align: center;
+}
+
+    .footer p, .footer a {
+        font-size: 15px;
+        margin: 12px 0;
+    }
+
+    .footer a {
+        color: #2563eb;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+/* ========== BUTTON CHUNG ========== */
+button,
+.home-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    border: none;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+.home-btn {
+    background-color: #fff;
+    border: 1px solid #2563eb;
+    color: #2563eb;
+}
+
+    .home-btn:hover {
+        background-color: #eff6ff;
+    }
+
+.note {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+}
+
+#link_btn {
+    text-decoration: none;
+}

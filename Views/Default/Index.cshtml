@@ -1,0 +1,169 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+
+}
+<link href="~/Content/style_K/Style_home.css" rel="stylesheet" />
+<link href="~/Content/style_K/Style_silder.css" rel="stylesheet" />
+<section class="banner-section">
+    <div class="slider">
+        <div class="slides">
+            <div class="slide" onclick="window.location.href=''">
+                <img src="~/Content/img/banner.png">
+            </div>
+            <div class="slide" onclick="window.location.href=''">
+                <img src="~/Content/img/banner1.png">
+            </div>
+            <div class="slide" onclick="window.location.href=''">
+                <img src="~/Content/img/banner2.png">
+            </div>
+            @*<div class="slide" onclick="window.location.href=''">
+                <img src="~/Content/img/banner3.jpg" style="width:1200px;height:450px">
+            </div>*@
+        </div>
+
+        @*Nút điều hướng*@
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+
+        @*dau cham*@
+        <div class="dots"></div>
+    </div>
+</section>
+<script src="~/Content/js/js_banner.js"></script>
+
+<section class="product-section">
+    <h2><a href="/Default/TrangIphone">Iphone</a></h2>
+
+    <div class="product-list">
+        <a href="/Product/Iphon17" class="product-card">
+            <img src="~/Content/img/b1.png" />
+            <h3>iPhone 17</h3>
+            <p class="price">37.999.000đ</p>
+        </a>
+
+        <a href="/Product/IphoneAir" class="product-card">
+            <img src="~/Content/img/0049406_iphone-air-256gb_240.png" />
+            <h3>iPhone Air</h3>
+            <p class="price">37.999.000đ <span class="old-price">34.999.000đ</span></p>
+        </a>
+
+        <a href="/Product/Iphon17" class="product-card">
+            <img src="~/Content/img/b1.png" />
+            <h3>iPhone 17</h3>
+            <p class="price">37.999.000đ</p>
+        </a>
+
+        <a href="/Product/IphoneAir" class="product-card">
+            <img src="~/Content/img/0049406_iphone-air-256gb_240.png" />
+            <h3>iPhone Air</h3>
+            <p class="price">37.999.000đ <span class="old-price">34.999.000đ</span></p>
+        </a>
+    </div>
+    <div class="view-all">
+        <a href="/Default/TrangIphone" class="btn-view">Xem tất cả iPhone</a>
+    </div>
+</section>
+
+<section class="product-section">
+    <h2><a href="/Default/TrangMac">Mac</a></h2>
+
+    <div class="product-list">
+        <a href="/Product/MacbookAirM3" class="product-card">
+            <img src="~/Content/img/0034122_macbook-air-m3-13-inch-8gb-ram-256gb-ssd_240.jpeg" alt="Macbook Air M3" />
+            <h3>Macbook Air M3</h3>
+            <p class="price">37.999.000đ</p>
+        </a>
+
+        <a href="/Product/MacbookAirM4" class="product-card">
+            <img src="~/Content/img/0036014_macbook-air-m4-13-inch-8-core-gpu-16gb-ram-256gb-ssd_240.jpeg" alt="Macbook Air M4" />
+            <h3>Macbook Air M4</h3>
+            <p class="price">37.999.000đ <span class="old-price">34.999.000đ</span></p>
+        </a>
+
+        <a href="/Product/MacbookAirM3" class="product-card">
+            <img src="~/Content/img/0034122_macbook-air-m3-13-inch-8gb-ram-256gb-ssd_240.jpeg" alt="Macbook Air M3" />
+            <h3>Macbook Air M3</h3>
+            <p class="price">37.999.000đ</p>
+        </a>
+
+        <a href="/Product/MacbookAirM4" class="product-card">
+            <img src="~/Content/img/0036014_macbook-air-m4-13-inch-8-core-gpu-16gb-ram-256gb-ssd_240.jpeg" alt="Macbook Air M4" />
+            <h3>Macbook Air M4</h3>
+            <p class="price">37.999.000đ <span class="old-price">34.999.000đ</span></p>
+        </a>
+    </div>
+    <div class="view-all">
+        <a href="/Default/TrangMac" class="btn-view">Xem tất cả Mac</a>
+    </div>
+</section>
+
+<section class="product-section">
+    <h2><a href="/Default/TrangWatch">Watch</a></h2>
+
+    <div class="product-list">
+        <a href="/Product/WatchUltra2" class="product-card">
+            <img src="~/Content/img/0030238_apple-watch-ultra-2-gps-cellular-49mm-ocean-2024_240.png" alt="Watch Ultra 2" />
+            <h3>Watch Ultra 2</h3>
+            <p class="price">37.999.000đ</p>
+        </a>
+
+        <a href="/Product/WatchSeGPS" class="product-card">
+            <img src="~/Content/img/0032869_apple-watch-se-gps-cellular-2024-sport-band-size-sm_240.jpeg" alt="Watch Se GPS" />
+            <h3>Watch Se GPS</h3>
+            <p class="price">37.999.000đ <span class="old-price">34.999.000đ</span></p>
+        </a>
+
+        <a href="/Product/WatchUltra2" class="product-card">
+            <img src="~/Content/img/0030238_apple-watch-ultra-2-gps-cellular-49mm-ocean-2024_240.png" alt="Watch Ultra 2" />
+            <h3>Watch Ultra 2</h3>
+            <p class="price">37.999.000đ</p>
+        </a>
+
+        <a href="/Product/WatchSeGPS" class="product-card">
+            <img src="~/Content/img/0032869_apple-watch-se-gps-cellular-2024-sport-band-size-sm_240.jpeg" alt="Watch Se GPS" />
+            <h3>Watch Se GPS</h3>
+            <p class="price">37.999.000đ <span class="old-price">34.999.000đ</span></p>
+        </a>
+    </div>
+    <div class="view-all">
+        <a href="/Default/TrangWatch" class="btn-view">Xem tất cả Watch</a>
+    </div>
+</section>
+
+<section class="product-section">
+    <h2><a href="/Default/TrangIpad">Ipad</a></h2>
+
+    <div class="product-list">
+        <a href="/Product/IpadAirM3" class="product-card">
+            <img src="~/Content/img/0035054_ipad-air-m3-11-inch-wi-fi_240.png" alt="Ipad Air M3" />
+            <h3>Ipad Air M3</h3>
+            <p class="price">37.999.000đ</p>
+        </a>
+
+        <a href="/Product/IpadA16" class="product-card">
+            <img src="~/Content/img/0035754_ipad-a16-11-inch-wi-fi_240.png" alt="Ipad A16" />
+            <h3>Ipad A16</h3>
+            <p class="price">37.999.000đ <span class="old-price">34.999.000đ</span></p>
+        </a>
+
+        <a href="/Product/IpadAirM3" class="product-card">
+            <img src="~/Content/img/0035054_ipad-air-m3-11-inch-wi-fi_240.png" alt="Ipad Air M3" />
+            <h3>Ipad Air M3</h3>
+            <p class="price">37.999.000đ</p>
+        </a>
+
+        <a href="/Product/IpadA16" class="product-card">
+            <img src="~/Content/img/0035754_ipad-a16-11-inch-wi-fi_240.png" alt="Ipad A16" />
+            <h3>Ipad A16</h3>
+            <p class="price">37.999.000đ <span class="old-price">34.999.000đ</span></p>
+        </a>
+    </div>
+    <div class="view-all" style="padding-bottom:15px">
+        <a href="/Default/TrangIpad" class="btn-view">Xem tất cả Ipad</a>
+    </div>
+</section>
+
+
+

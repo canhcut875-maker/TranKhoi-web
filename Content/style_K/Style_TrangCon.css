@@ -1,0 +1,93 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    background: #f5f5f7;
+}
+.breadcrumb{
+    font-size:18px;
+/*    margin:20px;*/
+    padding:5px 0;
+    background:#ffff;
+}
+    .breadcrumb a {
+        text-decoration: none;
+        color: black;
+    }
+.breadcrumb a:hover{
+    text-decoration:underline;
+}
+iphone-series{
+    display:flex;
+    flex-wrap:wrap;
+justify-content:center;
+   margin: 20px 0;
+  
+}
+.series-btn{
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:10px 18px;
+    text-decoration:none;
+    color: #111;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+}
+    .series-btn:hover {
+        background: #f3f3f3;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    padding: 30px;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.product-card {
+    display: block; /* click toan khoi*/
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.25s ease,box-shadow 0.25s ease;
+    text-decoration: none;
+    color:black;
+    position: relative;
+}
+    /*hieu ung sang trai -2px*/
+    .product-card:hover {
+        transform: translate(-2px);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+    /* nhat cai iphone len*/
+    .product-card img {
+        width: 100%;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .product-card:hover img {
+        transform: scale(1.05);
+    }
+/*   tac dong len cai gia tien  */
+.price {
+    color: #0033cc;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.old-price {
+    text-decoration: line-through; /* gach ngang gia niem yet*/
+    color: #999;
+    font-size: 14px;
+    margin-left: 4px;
+}

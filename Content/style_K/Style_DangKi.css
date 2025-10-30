@@ -1,0 +1,99 @@
+﻿body {
+    font-family: Arial;
+}
+
+.container {
+    display: flex;
+    padding: 60px 0;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+    .left img {
+        width: 80%;
+        max-width: 500px;
+    }
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 80px;
+}
+
+.sighup {
+    width: 450px;
+    height: 300px;
+    text-align: left;
+}
+
+    .sighup input {
+        width: 460px;
+        height: 45px;
+        margin-bottom: 20px;
+        border: 1px solid grey;
+        border-radius: 10px;
+    }
+
+    .sighup button {
+        width: 100%;
+        height: 45px;
+        margin-bottom: 20px;
+        border: 1px solid grey;
+        border-radius: 10px;
+        color: white;
+        background-color: #0066cc;
+    }
+
+    .sighup label {
+        margin-top: 10px;
+        display: block;
+    }
+
+
+.input, select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.birthday {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.note {
+    font-size: 15px;
+    color: grey;
+    margin-top: -6px;
+    margin-bottom: 12px;
+}
+
+.baomat a {
+    text-decoration: none;
+}
+
+.login-link a {
+    text-decoration: none;
+}
+
+/*mau canh bao*/
+span[id$="_error"] {
+    color: red;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 4px 0;
+    display: block;
+}

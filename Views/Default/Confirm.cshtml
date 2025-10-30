@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Confirm";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<link href="~/Content/style_K/Style_Confirm.css" rel="stylesheet" />
+<div class="card">
+    <div>
+        <div class="bank-info">
+            <strong>Họ và tên:</strong> <span id="confirm-name"></span><br>
+            <strong>Số điện thoại:</strong> <span id="confirm-phone"></span><br>
+            <strong>Địa chỉ:</strong> <span id="confirm-address"></span>
+        </div>
+        <div class="qr-section">
+            <img style="width:250px;height:250px" src="~/Content/img/MaQR.jpg" />
+            <p class="qr-instruction">Dùng ứng dụng ngân hàng quét mã QR để chuyển khoản</p>
+        </div>
+        <div class="divider">
+        </div>
+        <div class="payment-info">
+            <h2>Thông tin thanh toán</h2>
+            <p>Quý khách vui lòng lựa chọn các hình thức thanh toán dưới đây:</p>
+            <div class="options">
+                <div class="option">
+                    <input type="radio" id="kredivo" name="payment_method">
+                    <label for="kredivo">Thanh toán Kredivo</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="onepay" name="payment_method" checked>
+                    <label for="onepay">Thanh toán OnePay</label>
+                </div>
+            </div> <a href="#" class="other-methods">Các hình thức thanh toán khác </a>
+        </div>
+        
+    </div>
+    @*<button onclick="ChucMung()">Đặt Hàng</button>*@
+
+    <div class="footer">
+        <p>Khi cần hỗ trợ vui lòng gọi <a href="tel:19006626">1900.6626</a> (08:00 - 22:00)</p>
+        <a href="#">Xem chính sách mua hàng</a>
+        <a href="/Default/Index" class="home-btn">Về trang chủ</a>
+    </div>
+</div>
+<script src="~/Content/js/js_Confirm.js"></script>
+
+<script>
+    function ChucMung() {
+        alert("Cảm ơn bạn đã đặt hàng")
+    }
+    </script>

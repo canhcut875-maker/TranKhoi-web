@@ -1,0 +1,45 @@
+﻿.container-order {
+    width: 80%;
+    margin: 40px auto;
+    font-family: Arial;
+}
+
+    .container-order h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+    .order-table th, .order-table td {
+        padding: 12px;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+
+    .order-table th {
+        background: #007bff;
+        color: white;
+    }
+
+.status.success {
+    color: green;
+    font-weight: bold;
+}
+
+.status.pending {
+    color: orange;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+}

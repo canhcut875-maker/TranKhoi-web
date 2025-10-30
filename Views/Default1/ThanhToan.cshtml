@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "ThanhToan";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<link href="~/Content/style_K/Style_ThanhToan.css" rel="stylesheet" />
+<div class="card">
+    <div>
+    <div class="bank-info">
+        <p><strong>Số tài khoản:</strong> 1905 0450 7740 12</p>
+        <p><strong>Ngân hàng:</strong>Techcombank </p>
+        <p><strong>Chủ tài khoản: </strong>Phùng Anh Kiệt</p>
+    </div>
+
+
+    <div class="qr-section">
+        <img  style="width:250px;height:250px" src="~/Content/img/MaQR.jpg" />
+
+        <p class="qr-instruction">Dùng ứng dụng ngân hàng quét mã QR để chuyển khoản</p>
+    </div>
+
+    <div class="divider"></div>
+
+
+    <div class="payment-info">
+        <h2>Thông tin thanh toán</h2>
+        <p>Quý khách vui lòng lựa chọn các hình thức thanh toán dưới đây:</p>
+        <div class="options">
+            <div class="option">
+                <input type="radio" id="kredivo" name="payment_method">
+                <label for="kredivo">Thanh toán Kredivo</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="onepay" name="payment_method" checked>
+                <label for="onepay">Thanh toán OnePay</label>
+            </div>
+        </div>
+        <a href="#" class="other-methods">Các hình thức thanh toán khác </a>
+    </div>
+</div>
+
+
+<div class="footer">
+    <p>Khi cần hỗ trợ vui lòng gọi <a href="tel:19006626">1900.6626</a> (08:00 - 22:00)</p>
+    <a href="#">Xem chính sách mua hàng</a>
+    <a href="/Default/Index" class="home-btn">Về trang chủ</a>
+</div>
+</div>

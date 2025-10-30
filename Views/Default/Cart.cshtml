@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Cart";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+<link href="~/Content/style_K/Style_ThanhToan.css" rel="stylesheet" />
+<section class="cart-container">
+    <h2>🛒 Giỏ hàng của bạn</h2>
+
+    <table id="cart-table">
+        <thead>
+            <tr>
+                <th>Hình ảnh</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Tổng</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div class="cart-summary">
+        <h3>Tổng cộng: <span id="cart-total">0₫</span></h3>
+        <button id="clear-cart" class="btn-clear">Xóa toàn bộ giỏ hàng</button>
+        <a href="/Default/Address" class="btn btn-success">Tiếp tục tới bước thanh toán</a>
+    </div>
+</section>
+<script src="~/Content/js/Js_Cart.js"></script>
+

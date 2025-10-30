@@ -1,0 +1,128 @@
+﻿/* silder */
+.banner-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    cursor: pointer;
+}
+
+    .slide img {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+/* thanh dieu huong */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}
+/* dau chammmm*/
+.dots {
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+    .dot.active {
+        background: #ff4b2b;
+    }
+
+@media (max-width: 992px) {
+    .slider {
+        max-width: 90%;
+    }
+
+    .slide img {
+        height: 350px; /* giảm chiều cao banner */
+    }
+
+    .prev,
+    .next {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+/* Mobile (≤ 600px) */
+@media (max-width: 600px) {
+    .slider {
+        max-width: 95%;
+    }
+
+    .slide img {
+        height: 220px; /* nhỏ hơn cho điện thoại */
+        border-radius: 10px;
+    }
+
+    .prev,
+    .next {
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+/* Màn hình cực nhỏ (≤ 400px) */
+@media (max-width: 400px) {
+    .slide img {
+        height: 180px;
+    }
+}

@@ -1,0 +1,150 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    background: #f5f5f7;
+}
+
+.banner img {
+    width: 100%;
+}
+/* chu iphone   */
+.product-section h2 {
+    font-size: 45px;
+    text-align: center;
+    padding: 50px;
+}
+
+    .product-section h2 a {
+        color: black;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+        .product-section h2 a:hover {
+            color: #007bff;
+        }
+/*dinh hinh lai cai product cai fr hinh bang gird*/
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+/*lam lai cai boder cho sp va trang tri cho sp*/
+.product-card {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 240px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+    /*hieu ung sang trai -2px*/
+    .product-card:hover {
+        transform: translate(-2px);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+    /* nhat cai iphone len*/
+    .product-card img {
+        width: 100%;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .product-card:hover img {
+        transform: scale(1.05);
+    }
+/*   tac dong len cai gia tien  */
+.price {
+    color: #0033cc;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.old-price {
+    text-decoration: line-through; /*gach ngang gia niem yet*/
+    color: #999;
+    font-size: 14px;
+    margin-left: 4px;
+}
+/* button nut chuyen trang*/
+.view-all {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.btn-view {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 1.5px solid #3f51b5;
+    border-radius: 30px;
+    color: #3f51b5;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+    .btn-view:hover {
+        background: #3f51b5;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+@media (max-width: 992px) {
+    .product-section h2 {
+        font-size: 36px;
+        padding: 40px 20px;
+    }
+
+    .product-card {
+        width: 45%; /* 2 sản phẩm mỗi hàng */
+    }
+
+    .product-list {
+        gap: 15px;
+    }
+}
+
+/* Mobile (≤ 600px) - 2 hình mỗi hàng */
+@media (max-width: 600px) {
+    .product-section h2 {
+        font-size: 28px;
+        padding: 30px 10px;
+    }
+
+    .product-card {
+        width: 48%; /* 2 hình trên 1 hàng */
+    }
+
+    .product-list {
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .btn-view {
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+}
+
+/* Màn hình cực nhỏ (≤ 400px) */
+@media (max-width: 400px) {
+    .product-section h2 {
+        font-size: 22px;
+    }
+
+    .price {
+        font-size: 15px;
+    }
+
+    .old-price {
+        font-size: 13px;
+    }
+}

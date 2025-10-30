@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "UserSighUp";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<link href="~/Content/style_K/Style_DangKi.css" rel="stylesheet" />
+<div class="container">
+    <div class="left">
+        <img src="https://gcs.vn/wp-content/uploads/2024/04/spear-phishing-la-gi-4-1030x687.webp" alt="hình minh họa" />
+    </div>
+    <div class="right">
+        <h2>Đăng ký</h2>
+        <form class="sighup" id="formsighup">
+            <label>Họ và tên:</label>
+            <input type="text" id="name" />
+            <span class="error" id="hovaten_error"></span>
+
+            <label>Ngày sinh:</label>
+            <div class="birthday">
+                <select>
+                    <option>Ngày</option>
+                    <script>for (let i = 1; i <= 31; i++) document.write(`<option>${i}</option>`);</script>
+                </select>
+                <select>
+                    <option>Tháng</option>
+                    <script>for (let i = 1; i <= 12; i++) document.write(`<option>${i}</option>`);</script>
+                </select>
+                <select>
+                    <option>Năm</option>
+                    <script>
+    const year = new Date().getFullYear();
+                        for (let i = year; i >= 1900; i--) document.write(`<option>${i}</option>`);</script>
+                </select>
+            </div>
+            <label>E-mail:</label>
+            <input type="email" id="email">
+            <span class="error" id="email_error"></span>
+
+            <label>Điện thoại:</label>
+            <input type="text" id="sdt">
+            <span class="error" id="sdt_error"></span>
+
+            <label>Tên đăng nhập:</label>
+            <input type="text" id="userName">
+            <span class="error" id="userName_error"></span>
+
+            <label>Mật khẩu:</label>
+            <input type="password" id="password">
+            <span class="error" id="password_error"></span>
+            <p class="note">Lưu ý: Mật khẩu phải có tối thiểu 8 ký tự bao gồm chữ, số và ký tự đặc biệt.</p>
+
+            <label>Xác nhận mật khẩu:</label>
+            <input type="password" id="rePassword">
+            <span class="error" id="rePassword_error"></span>
+            <p class="baomat">
+                Bằng việc đăng ký tài khoản Tôi đồng ý với các
+                <a href="#">điều khoản bảo mật</a> &
+                <a href="#">sử dụng thông tin cá nhân</a>.
+            </p>
+
+            <button type="submit">Đăng ký</button>
+
+            <p class="login-link">
+                Bạn Đã Có Tài Khoản? <a href="#">Đăng Nhập Ngay</a>
+            </p>
+        </form>
+    </div>
+</div>
+<script src="~/Content/js/Js_SighUp.js"></script>

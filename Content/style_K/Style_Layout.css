@@ -1,0 +1,262 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    /*    background-color:antiquewhite;*/
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141924;
+    color: white;
+    padding:10px 40px;
+    position:relative;
+}
+/* ben trai*/
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+    .nav-left .logo {
+        height: 50px;
+    }
+
+    .nav-left .apple-auth {
+        height: 35px;
+    }
+/* Giữa */
+.nav-center {
+    flex: 1;
+    display:flex;
+    justify-content:center;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    padding: 8px 20px;
+    width: 60%;
+    max-width: 600px;
+}
+    .search-box i {
+        color: gray;
+        font-size: 18px;
+        margin-right: 10px;
+    }
+.search-box  input{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+}
+/* Phải */
+.nav-right{
+    display:flex;
+    align-items: center;
+    gap:25px;
+}
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+    .nav-item a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .nav-item a:hover{
+        text-decoration: underline;
+    }
+/* Nút menu mobile */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+/*            menu phu       */
+.subnav {
+    background-color: #141924;
+    border-top: 1px solid #5a5a5a;
+}
+    .subnav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 10px 0;
+        gap: 20px;
+        transition: all 0.3s ease;
+    }
+    .subnav a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+        .subnav a:hover {
+            color: yellow;
+            border-bottom: 2px solid yellow;
+        }
+
+/*           Footerrrrr    */
+.footer {
+    background-color: #131a22;
+    color: white;
+    padding: 40px 60px 20px;
+    font-size: 13px;
+}
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.footer-col {
+    margin-bottom: 18px;
+    line-height: 1.5;
+    border-bottom: 1px solid #3a4553;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    font-size: 12px;
+    color: #aaa;
+    white-space: pre-line; /* tự xuống dòng nhưng vẫn giữ bố cục */
+    line-height: 1.6;
+}
+/*       Thẻ thông tin trên footer      */
+.info-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 60px auto;
+    max-width: 1300px;
+    padding: 0 20px;
+    flex-wrap: wrap; /* cho responsive */
+}
+.info-card {
+    flex: 1 1 45%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    min-width: 280px;
+}
+    .info-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+    .info-card h3 {
+        font-size: 1.5rem;
+        color: #111;
+        margin-bottom: 24px;
+    }
+    .info-card ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .info-card li {
+        margin-bottom: 14px;
+    }
+    .info-card a {
+        text-decoration: none;
+        color: #444;
+        font-size: 1.05rem;
+        transition: color 0.2s;
+    }
+        .info-card a:hover {
+            color: #0071e3; /* Xanh Apple */
+        }
+/*             RESPONSIVE DESIGN       */
+/* table, laptop nho*/
+@media (max-width: 992px)
+{
+    .footer {
+        padding: 30px 30px 15px;
+    }
+    .info-footer {
+        gap: 20px;
+    }
+    .info-card {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+    .search-box {
+        width: 80%;
+    }
+    .navbar {
+        padding: 10px 20px;
+    }
+}
+/*  man hinh dt  */
+@media (max-width: 768px)
+{
+    .nav-center {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    /* Menu con (subnav) */
+    .subnav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #3a3a3a;
+        padding: 15px 0;
+    }
+    .subnav.active ul {
+        display: flex;
+        animation: fadeIn 0.3s ease;
+    }
+    .subnav a {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    .footer {
+        font-size: 12px;
+        padding: 20px 15px;
+    }
+    .footer-top {
+        grid-template-columns: 1fr;
+    }
+    .footer-col {
+        border: none;
+    }
+    .info-card {
+        padding: 25px;
+        font-size: 14px;
+    }
+
+        .info-card h3 {
+            font-size: 1.3rem;
+        }
+
+}
+/*           Hiệu ứng mở menu     */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
